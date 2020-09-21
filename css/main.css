@@ -1,0 +1,284 @@
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("../fonts/GothamPro-Medium.eot");
+  src: local("Gotham Pro Medium"), local("GothamPro-Medium"), url("../fonts/GothamPro-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro-Medium.woff") format("woff"), url("../fonts/GothamPro-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("../fonts/GothamPro-Bold.eot");
+  src: local("Gotham Pro Bold"), local("GothamPro-Bold"), url("../fonts/GothamPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro-Bold.woff") format("woff"), url("../fonts/GothamPro-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("../fonts/GothamPro-Light.eot");
+  src: local("Gotham Pro Light"), local("GothamPro-Light"), url("../fonts/GothamPro-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro-Light.woff") format("woff"), url("../fonts/GothamPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("../fonts/GothamPro.eot");
+  src: local("Gotham Pro"), local("GothamPro"), url("../fonts/GothamPro.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro.woff") format("woff"), url("../fonts/GothamPro.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-size: 15px;
+  background: #CCCCCC;
+  font-family: "Gotham Pro";
+  color: #222222;
+}
+
+a {
+  text-decoration: none;
+  color: #222222;
+}
+
+.container {
+  padding: 0 30px;
+  max-width: 1500px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  position: relative;
+}
+
+.icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+.icon_down {
+  background-image: url("../images/icons/down.svg");
+  width: 8px;
+  height: 5px;
+}
+.icon_burger {
+  background-image: url("../images/icons/burger.svg");
+  width: 24px;
+  height: 24px;
+}
+.icon_profile {
+  background-image: url("../images/icons/profile.svg");
+  width: 24px;
+  height: 24px;
+}
+.icon_cart {
+  background-image: url("../images/icons/cart.svg");
+  width: 24px;
+  height: 29px;
+}
+.icon_arrow-left {
+  background-image: url("../images/icons/leftArrow.svg");
+  width: 34px;
+  height: 24px;
+}
+.icon_arrow-right {
+  background-image: url("../images/icons/arrowRight.svg");
+  width: 34px;
+  height: 24px;
+}
+.icon_arrow-right-blue {
+  background-image: url("../images/icons/arrowRightBlue.svg");
+  width: 39px;
+  height: 22px;
+}
+
+.btn {
+  color: #1C69D4;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+  border: 2px solid #1C69D4;
+  padding: 10px 35px;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  transition: background 0.1s linear;
+}
+.btn:hover {
+  background: #195ebd;
+}
+.btn_full-width {
+  width: 100%;
+}
+.btn_full-blue {
+  background: #1C69D4;
+  border: 2px solid #1C69D4;
+  color: white;
+}
+.btn_green {
+  color: #3CA255;
+  border-color: #3CA255;
+}
+.btn .icon {
+  margin-right: 10px;
+}
+
+.form__input {
+  width: 100%;
+  font-size: 14px;
+  line-height: 20px;
+  color: #222222;
+  border: 1px solid #BBBBBB;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 14px 15px 13px 50px;
+  outline: none;
+  transition: box-shadow 0.1s linear;
+}
+.form__input:focus {
+  box-shadow: 0 0 5px 1px #5a9eff;
+  border-color: #5a9eff;
+}
+.form__input::placeholder {
+  color: #999999;
+}
+
+.slider__navigation {
+  display: flex;
+  position: absolute;
+  right: 0;
+}
+.slider__navigation-link {
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  transition: background 0.1s linear;
+  cursor: pointer;
+  outline: none;
+}
+.slider__navigation-link:hover:not(.slider__navigation-link_disabled) {
+  background: rgba(255, 255, 255, 0.4);
+}
+.slider__navigation-link_disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.slider__slide-image {
+  height: 539px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider__slide-content {
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #222222;
+  text-decoration: none;
+}
+
+.header {
+  background: #FFFFFF;
+  padding: 23px 30px 29px;
+}
+.header__wrapper {
+  display: flex;
+}
+.header__logo-container {
+  padding-right: 30px;
+}
+.header__addresses {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  display: inline-block;
+  padding-right: 30px;
+  width: 220px;
+}
+.header__addresses-icon {
+  margin-left: 3px;
+}
+.header__catalog-button {
+  display: block;
+}
+.header__main {
+  flex-grow: 3;
+}
+.header__row1 {
+  display: flex;
+  margin-bottom: 16px;
+  align-items: flex-start;
+}
+.header__menu {
+  flex-grow: 3;
+  padding: 0 36px;
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+.header__menu-item {
+  margin-right: 40px;
+}
+.header__menu-item:last-child {
+  margin-right: 0;
+}
+.header__menu-link {
+  font-size: 15px;
+  line-height: 20px;
+}
+.header__menu-link:hover {
+  text-decoration: underline;
+}
+.header__menu-link_active {
+  font-weight: 500;
+}
+.header__phone-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+}
+.header__user-menu {
+  margin-top: -5px;
+}
+.header__user-menu-link {
+  font-size: 14px;
+  line-height: 20px;
+  display: inline-block;
+  margin-right: 25px;
+}
+.header__user-menu-link:last-child {
+  margin-right: 0;
+}
+.header__user-menu-text {
+  vertical-align: middle;
+  margin-left: 5px;
+}
+.header__menu-link-cart {
+  position: relative;
+  top: -4px;
+}
+.header__row2 {
+  display: flex;
+}
+.header__catalog-button {
+  margin-right: 30px;
+  width: 220px;
+}
+.header__search {
+  flex-grow: 2;
+}
+.header__search-label {
+  position: relative;
+}
+.header__search-label:before {
+  display: block;
+  content: "";
+  background-image: url("../images/icons/loupe.svg");
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 50%;
+  margin-top: -12px;
+  left: 17px;
+}
+
+.main {
+  padding: 30px 30px;
+}
