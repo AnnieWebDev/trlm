@@ -86,6 +86,11 @@ a {
   width: 39px;
   height: 22px;
 }
+.icon_whatsapp {
+  background-image: url("../images/icons/whatsapp.svg");
+  width: 30px;
+  height: 29.43px;
+}
 
 .btn {
   color: #1C69D4;
@@ -98,10 +103,11 @@ a {
   border-radius: 4px;
   outline: none;
   cursor: pointer;
-  transition: background 0.1s linear;
+  background-color: white;
+  transition: box-shadow 0.1s linear;
 }
 .btn:hover {
-  background: #195ebd;
+  box-shadow: 0 0 5px 1px #1C69D4;
 }
 .btn_full-width {
   width: 100%;
@@ -110,10 +116,18 @@ a {
   background: #1C69D4;
   border: 2px solid #1C69D4;
   color: white;
+  transition: background 0.1s linear;
+}
+.btn_full-blue:hover {
+  background: #195ebd;
 }
 .btn_green {
   color: #3CA255;
   border-color: #3CA255;
+  transition: box-shadow 0.1s linear;
+}
+.btn_green:hover {
+  box-shadow: 0 0 5px 1px #3CA255;
 }
 .btn .icon {
   margin-right: 10px;
@@ -168,9 +182,26 @@ a {
 .slider__slide-content {
   font-size: 16px;
   line-height: 24px;
-  text-transform: uppercase;
   color: #222222;
   text-decoration: none;
+}
+.slider__slide-logo {
+  margin-top: 36px;
+}
+.slider__slide-title {
+  font-size: 42px;
+  line-height: 49px;
+  color: #FFFFFF;
+  margin: 25px 0 30px;
+}
+.slider__slide-link {
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.slider__slide-link-arrow {
+  margin-left: 16px;
 }
 
 .header {
@@ -281,4 +312,58 @@ a {
 
 .main {
   padding: 30px 30px;
+}
+
+.content {
+  margin-top: -244px;
+}
+
+.information {
+  display: flex;
+  margin-bottom: 28px;
+  justify-content: space-between;
+}
+.information__item {
+  width: 460px;
+  display: flex;
+  background-color: #fff;
+  padding: 32px 20px 32px 16px;
+  box-sizing: border-box;
+}
+.information__item-step {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 32px;
+  color: rgba(34, 34, 34, 0.2);
+}
+.information__item-inner {
+  display: flex;
+  padding-left: 9px;
+  flex-grow: 1;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+.information__item-title {
+  margin: 0 0 8px 0;
+  width: 100%;
+}
+.information__item-text {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+  width: 100%;
+}
+.information__item-button {
+  display: block;
+  margin-top: 8px;
+  height: 52px;
+  box-sizing: border-box;
+}
+.information__item-button-whatsapp {
+  margin-top: -4px;
+}
+.information__item-tel {
+  font-size: 24px;
+  line-height: 40px;
+  width: 100%;
 }
