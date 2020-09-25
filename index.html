@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/main.css">
     <title>trml</title>
 </head>
@@ -55,11 +56,11 @@
 
     </header>
     <main class="main">
-        <div class="slider">
+        <div class="swiper-container slider">
             <div class="container">
                 <div class="slider__navigation">
                     <button
-                        class="slider__navigation-link slider__navigation-link_prev slider__navigation-link_disabled">
+                        class="slider__navigation-link slider__navigation-link_prev">
                         <span class="icon icon_arrow-left"></span>
                     </button>
                     <button class="slider__navigation-link slider__navigation-link_next">
@@ -67,18 +68,42 @@
                     </button>
                 </div>
             </div>
-            <div class="slider__slide">
-                <div class="slider__slide-image" style="background-image: url('images/slide1.jpg')">
-                    <div class="slider__slide-content container">
-                        <img src="images/championLogo.jpg" class="slider__slide-logo">
-                        <h2 class="slider__slide-title">Фильтр масла <br> в подарок</h2>
-                        <a href="#" class="slider__slide-link">
-                            подробнее <span class="icon icon_arrow-right-blue slider__slide-link-arrow"></span>
-                        </a>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slider-slide">
+                    <div class="slider__slide-image" style="background-image: url('images/slide1.jpg')">
+                        <div class="slider__slide-content container">
+                            <img src="images/championLogo.jpg" class="slider__slide-logo">
+                            <h2 class="slider__slide-title">Фильтр масла <br> в подарок</h2>
+                            <a href="#" class="slider__slide-link">
+                                подробнее <span class="icon icon_arrow-right-blue slider__slide-link-arrow"></span>
+                            </a>
+                        </div>
                     </div>
                 </div>
-
+                <div class="swiper-slide slider-slide">
+                    <div class="slider__slide-image" style="background-image: url('images/slide1.jpg')">
+                        <div class="slider__slide-content container">
+                            <img src="images/championLogo.jpg" class="slider__slide-logo">
+                            <h2 class="slider__slide-title">Фильтр масла <br> в подарок</h2>
+                            <a href="#" class="slider__slide-link">
+                                подробнее <span class="icon icon_arrow-right-blue slider__slide-link-arrow"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide slider-slide">
+                    <div class="slider__slide-image" style="background-image: url('images/slide1.jpg')">
+                        <div class="slider__slide-content container">
+                            <img src="images/championLogo.jpg" class="slider__slide-logo">
+                            <h2 class="slider__slide-title">Фильтр масла <br> в подарок</h2>
+                            <a href="#" class="slider__slide-link">
+                                подробнее <span class="icon icon_arrow-right-blue slider__slide-link-arrow"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
+
         </div>
         <div class="content container">
             <div class="information">
@@ -89,7 +114,8 @@
                         <p class="information__item-text">На любые номера РФ</p>
                         <a href="tel:88005501980" class="information__item-tel">8 800 550-19-80</a>
                         <a class="btn btn_full-width btn_green information__item-button"><span
-                                class="icon icon_whatsapp information__item-button-whatsapp"></span> +7 (928) 107-80-80</a>
+                                class="icon icon_whatsapp information__item-button-whatsapp"></span> +7 (928)
+                            107-80-80</a>
                     </div>
                 </div>
                 <div class="information__item">
@@ -112,11 +138,42 @@
                 </div>
             </div>
             <div class="banners">
-                <div class="banners__banner"><a href="#" class="banners__link">подробнее</a></div>
-                <div class="banners__banner banners__banner_big"><a href="#" class="banners__link">подробнее</a></div>
+                <div class="banners__banner" style="background-image: url('images/banner1.jpg')">
+                    <h3 class="banners__title">Щетки <br> AWM</h3>
+                    <a href="#" class="banners__link">подробнее</a>
+                </div>
+                <div class="banners__banner banners__banner_big" style="background-image: url('images/bannerBig.jpg')">
+                    <div class="banners__duration">Весь январь</div>
+                    <div class="banners__label">Цена снижена</div>
+                    <h3 class="banners__title">скидка 20% <br> на весь <br> DOT4</h3>
+                    <a href="#" class="banners__link">подробнее</a>
+                </div>
             </div>
         </div>
     </main>
+    <footer class="footer">
+        <div class="container">
+            <ul class="footer__menu">
+                <li class="footer__menu-item"><a href="#" class="footer__menu-link">Подбор запчастей</a></li>
+                <li class="footer__menu-item"><a href="#" class="footer__menu-link">Доставка</a></li>
+                <li class="footer__menu-item"><a href="#" class="footer__menu-link">Как купить</a></li>
+                <li class="footer__menu-item"><a href="#" class="footer__menu-link">Оплата</a></li>
+                <li class="footer__menu-item"><a href="#" class="footer__menu-link">Договор оферты</a></li>
+                <li class="footer__menu-item"><a href="#" class="footer__menu-link">Политика конфиденциальности</a></li>
+                <li class="footer__menu-item"><a href="#" class="footer__menu-link">Реквизиты</a></li>
+                <li class="footer__menu-item"><a href="#" class="footer__menu-link">Контакты</a></li>
+                <li class="footer__menu-item"><a href="#" class="footer__menu-link">Акции</a></li>
+            </ul>
+            <div class="footer__social">
+                <a href="#" class="footer__social-link"><span class="icon icon_vk"></span></a>
+                <a href="#" class="footer__social-link"><span class="icon icon_whatsapp2"></span></a>
+                <a href="#" class="footer__social-link"><span class="icon icon_instagram"></span></a>
+            </div>
+            <div class="footer__copyright">Дизайн — «<span class="footer__copyright_accent">Есть Идея</span>!»</div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

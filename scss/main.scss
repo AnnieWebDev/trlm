@@ -2,7 +2,7 @@
 
 body {
     font-size: 15px;
-    background: #CCCCCC;
+    background: #fff;
     font-family: "Gotham Pro";
     color: #222222;
 }
@@ -74,6 +74,24 @@ a {
         height: 29.43px
     }
 
+    &_vk {
+        background-image: url('../images/icons/vk.svg');
+        width: 30px;
+        height: 30px;
+    }
+
+    &_whatsapp2 {
+        background-image: url('../images/icons/whatsapp2.svg');
+        width: 30px;
+        height: 30px;
+    }
+
+    &_instagram {
+        background-image: url('../images/icons/instagram.svg');
+        width: 30px;
+        height: 30px;
+    }
+
 
 
 }
@@ -89,7 +107,7 @@ a {
     border-radius: 4px;
     outline: none;
     cursor: pointer;
-    background-color: white;
+    background-color: #FFF;
     transition: box-shadow 0.1s linear;
 
     &:hover {
@@ -105,7 +123,7 @@ a {
     &_full-blue {
         background: #1C69D4;
         border: 2px solid #1C69D4;
-        color: white;
+        color: #FFF;
         transition: background 0.1s linear;
 
         &:hover {
@@ -164,6 +182,7 @@ a {
         display: flex;
         position: absolute;
         right: 0;
+        z-index: 2;
 
 
         &-link {
@@ -175,12 +194,12 @@ a {
             cursor: pointer;
             outline: none;
 
-            &:hover:not(&_disabled) {
+            &:hover:not(.swiper-button-disabled) {
                 background: rgba(255, 255, 255, 0.4);
 
             }
 
-            &_disabled {
+            &.swiper-button-disabled {
                 opacity: 0.5;
                 cursor: not-allowed;
 
@@ -193,6 +212,8 @@ a {
         height: 539px;
         background-repeat: no-repeat;
         background-size: cover;
+        background-size: 1820px 101%;
+        background-position: center;
     }
 
     &__slide-content {
@@ -210,7 +231,7 @@ a {
     &__slide-title {
         font-size: 42px;
         line-height: 49px;
-        color: #FFFFFF;
+        color: #FFF;
         margin: 25px 0 30px;
     }
 
@@ -227,7 +248,7 @@ a {
 }
 
 .header {
-    background: #FFFFFF;
+    background: #FFF;
     padding: 23px 30px 29px;
 
     &__wrapper {
@@ -365,16 +386,20 @@ a {
 
 .main {
     padding: 30px 30px;
+    background-color: #F0F0F0;
+
 }
 
 .content {
     margin-top: -244px;
+    z-index: 1;
 }
 
 .information {
     display: flex;
     margin-bottom: 28px;
     justify-content: space-between;
+
 
     &__item {
         width: 460px;
@@ -434,4 +459,133 @@ a {
     }
 
 
+}
+
+.banners {
+    display: flex;
+    margin-bottom: 28px;
+    justify-content: space-between;
+
+    &__banner {
+        display: flex;
+        width: 460px;
+        height: 356px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-right: 30px;
+        padding: 40px;
+        align-content: space-between;
+        flex-wrap: wrap;
+        position: relative;
+        box-sizing: border-box;
+
+        &_big {
+            flex-grow: 1;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__title {
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 36px;
+        color: #FFF;
+        letter-spacing: 1px;
+        width: 100%;
+        margin: 0;
+
+    }
+
+    &__link {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        text-transform: uppercase;
+        color: #FFF;
+        padding-bottom: 5px;
+        border-bottom: 2px solid #FFF;
+
+    }
+
+    &__duration {
+        font-size: 20px;
+        line-height: 24px;
+        color: #FFF;
+        letter-spacing: 1px;
+        width: 100%;
+    }
+
+    &__label {
+        padding: 15px;
+        background-color: #FF4400;
+        color: #FFF;
+        font-size: 15px;
+        line-height: 24px;
+        text-transform: uppercase;
+        text-align: center;
+        box-sizing: border-box;
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
+
+}
+
+.footer {
+    margin: 0 auto;
+    background-color: #F0F0F0;
+
+
+
+    &__menu {
+        display: flex;
+        list-style-type: none;
+        margin: 0 0 30px 0;
+        justify-content: center;
+        padding-left: 0;
+
+
+    }
+
+    &__menu-item {
+        font-size: 15px;
+        line-height: 20px;
+        font-weight: bold;
+        margin-right: 35px;
+
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__social {
+        text-align: center;
+    }
+
+    &__social-link {
+        padding-right: 24px;
+
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+
+    &__copyright {
+        text-align: center;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 20px;
+        color: #777777;
+        padding: 16px 0 20px;
+
+        &_accent {
+            border-bottom: 1px solid #777777;
+        }
+    }
 }
